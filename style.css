@@ -1,3 +1,5 @@
+@import url('cor.css');
+
 body {
   margin: 0px;
   font-family: arial,Arial, Helvetica, sans-serif ;
@@ -23,7 +25,7 @@ img {
 }
 
 .header-bg {
-  background-color: #000000;
+  background-color: var(--c12);
 }
 
 .header {
@@ -45,14 +47,14 @@ img {
 
 .header-menu a {
   border-bottom: 2px solid transparent;
-  color: #ffffff;
+  color: var(--c0);
   display: inline-block;
   padding: 16px 0px;
   font-size: 18px;
 }
 
 .header-menu a:hover {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid var(--c0);
   transition: border-bottom 0.4s ease;
 }
 
@@ -62,16 +64,16 @@ img {
     padding-top: 20px;
   }
   .header-menu a {
-    background: #111111;
+    background: var(--c11);
     padding: 12px;
     border-radius: 4px;
   }
 }
 
 .introducao-bg {
-  background: #000000;
-  color: #ffffff;
-  box-shadow: inset 0 -120px #ffffff;
+  background: var(--c12);
+  color: var(--c0);
+  box-shadow: inset 0 -120px var(--c0);
 }
 
 .introducao {
@@ -104,14 +106,14 @@ img {
 }
 
 .introducao h1 span {
-  color: #ffbb00;
+  color: var(--p1);
 }
 
 .introducao p {
   margin-bottom: 20px;
   font-size: 24px;
   line-height: 1.5;
-  color: #b2b2b2;
+  color: var(--c5);
 }
 
 .introducao a {
@@ -120,7 +122,7 @@ img {
   background: linear-gradient(#ffbb00, #f2a50c);
   border-radius: 4px;
   text-transform: uppercase;
-  color: #332200;
+  color: var(--p5);
   font-size: 18px;
   line-height: 1.33;
   font-weight: bold;
@@ -141,9 +143,9 @@ img {
 
   @media (max-width: 800px) {
     .introducao-bg {
-      background: #111111;
+      background: var(--c11);
       padding-top: 40px;
-      box-shadow: inset 0 -60px #ffffff;
+      box-shadow: inset 0 -60px var(--c0);
     }
     .introducao {
       grid-template-columns: 1fr;
